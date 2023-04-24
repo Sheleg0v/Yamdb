@@ -43,7 +43,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: change directory
-      run: cd api_yamdb/
+      run: cd api_yamdbF/
     - name: Push to Docker Hub
       uses: docker/build-push-action@v2 
       with:
