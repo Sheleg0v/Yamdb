@@ -4,18 +4,15 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.db import IntegrityError
 from django.shortcuts import get_object_or_404
-from rest_framework import (
-    permissions, status, viewsets, pagination, filters,
-    exceptions, decorators
-)
+from rest_framework import (decorators, exceptions, filters, pagination,
+                            permissions, status, viewsets)
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from .models import User
 from .permissions import AdminOnly
-from .serializers import (
-    AuthSerializer, TokenSerializer, UserSerializer, MeSerializer
-)
+from .serializers import (AuthSerializer, MeSerializer, TokenSerializer,
+                          UserSerializer)
 
 
 class UsersViewSet(viewsets.ModelViewSet):

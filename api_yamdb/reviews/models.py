@@ -1,8 +1,8 @@
+from core.models import BaseReviewComment, CommonCategoryGenre
 from django.conf import settings
 from django.core import validators
 from django.db import models
 
-from core.models import BaseReviewComment, CommonCategoryGenre
 from .validator import year_validate
 
 

@@ -1,11 +1,9 @@
 import csv
 
-from django.core.management.base import BaseCommand
 from django.conf import settings
-
+from django.core.management.base import BaseCommand
 from reviews.models import Category, Comment, Genre, GenreTitle, Review, Title
 from users.models import User
-
 
 FILE_PATH: int = 0
 MODEL_NAME: int = 1
