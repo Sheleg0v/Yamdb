@@ -1,5 +1,7 @@
 # YaMDb API
 
+![example workflow](https://github.com/sheleg0v/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 ### Описание проекта:
 
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения 
