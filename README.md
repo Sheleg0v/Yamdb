@@ -2,7 +2,9 @@
 
 ![example workflow](https://github.com/sheleg0v/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-### Описание проекта:
+http://51.250.13.101/
+
+## Описание проекта:
 
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения 
 в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
@@ -16,60 +18,59 @@
 - PyJWT 2.1.0
 
 Список запросов и эндпоинтов описан в документации ReDoc, доступной по адресу:
+
 ```
 http://127.0.0.1:8000/redoc/
 ```
 
-### Как запустить проект:
+## Шаблон наполнения .env:
+
+```
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
+DB_HOST=db
+DB_PORT=5432
+```
+
+## Запуск проекта:
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/Gaius-Capito/api_yamdb.git
+git clone git@github.com:Sheleg0v/infra_sp2.git
 ```
 
-Cоздать и активировать виртуальное окружение:
+Перейти в директорию infra:
 
 ```
-python -m venv venv
+cd infra_sp2/infra
 ```
 
-```
-source venv/source/activate
-```
-
-Установить зависимости из файла requirements.txt:
+Запустить docker-compose
 
 ```
-python3 -m pip install --upgrade pip
-```
-
-```
-pip install -r requirements.txt
+docker-compose up -d --build
 ```
 
 Выполнить миграции:
 
 ```
-python manage.py makemigrations
+docker-compose exec web python manage.py makemigrations
 ```
 ```
-python manage.py migrate
-```
-
-Запустить проект:
-
-```
-python manage.py runserver
+docker-compose exec web python manage.py migrate
 ```
 
+## Заполнение базы данных:
+После запуска проекта выполните команду
 
-Авторы: 
 ```
-https://github.com/maxwellhousee - Максим Нуриев
+docker-compose exec web python manage.py loaddata fixtures.json 
 ```
-```
-https://github.com/Sheleg0v - Иван Шелегов
-```
-```
-https://github.com/Gaius-Capito - Владислав Бунин
-```
+
+
+### Авторы:
+- https://github.com/maxwellhousee - Максим Нуриев
+- https://github.com/Sheleg0v - Иван Шелегов
+- https://github.com/Gaius-Capito - Владислав Бунин
