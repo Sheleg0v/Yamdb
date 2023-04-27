@@ -66,7 +66,7 @@ docker-compose exec web python manage.py migrate
 После запуска проекта выполните команду
 
 ```
-docker-compose exec web python manage.py loaddata fixtures.json 
+docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 
