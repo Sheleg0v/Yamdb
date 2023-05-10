@@ -7,6 +7,12 @@ are not stored in YaMDb, you cannot watch a movie or listen to music here.
 
 Interaction with the database is carried out through the Api.
 
+The list of requests and endpoints is described in the ReDoc documentation, available at:
+
+```
+http://127.0.0.1:8000/redoc/
+```
+
 ## Stack:
 - Django 3.2
 - DRF 3.12.4
@@ -15,12 +21,6 @@ Interaction with the database is carried out through the Api.
 - gunicorn 20.0.4
 - nginx
 - PostgreSQL
-
-The list of requests and endpoints is described in the ReDoc documentation, available at:
-
-```
-http://127.0.0.1:8000/redoc/
-```
 
 ## Filling template .env:
 
