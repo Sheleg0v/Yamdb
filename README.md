@@ -70,4 +70,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 
 ### Author:
-- https://github.com/Sheleg0v - Иван Шелегов
+- https://github.com/Sheleg0v - Ivan Shelegov
