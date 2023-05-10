@@ -4,8 +4,6 @@
 
 ## Project description:
 
-YaMDb project 
-
 The YaMDb project collects user reviews of works. The works themselves 
 are not stored in YaMDb, you cannot watch a movie or listen to music here.
 
