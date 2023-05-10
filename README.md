@@ -7,7 +7,7 @@ are not stored in YaMDb, you cannot watch a movie or listen to music here.
 
 Interaction with the database is carried out through the Api.
 
-Stack:
+### Stack:
 - Django 3.2
 - DRF 3.12.4
 - djangorestframework-simplejwt 4.7.2
