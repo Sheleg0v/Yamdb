@@ -2,28 +2,28 @@
 
 ![example workflow](https://github.com/sheleg0v/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-http://51.250.13.101/
+## Project description:
 
-## Описание проекта:
+YaMDb project 
 
-Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения 
-в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
+The YaMDb project collects user reviews of works. The works themselves 
+are not stored in YaMDb, you cannot watch a movie or listen to music here.
 
-Взаимодействие с БД осуществляется через Api.
+Interaction with the database is carried out through the Api.
 
-Стек:
+Stack:
 - Django 3.2
 - DRF 3.12.4
 - djangorestframework-simplejwt 4.7.2
 - PyJWT 2.1.0
 
-Список запросов и эндпоинтов описан в документации ReDoc, доступной по адресу:
+The list of requests and endpoints is described in the ReDoc documentation, available at:
 
 ```
 http://127.0.0.1:8000/redoc/
 ```
 
-## Шаблон наполнения .env:
+## Filling template .env:
 
 ```
 DB_ENGINE=django.db.backends.postgresql
@@ -34,26 +34,26 @@ DB_HOST=db
 DB_PORT=5432
 ```
 
-## Запуск проекта:
-Клонировать репозиторий и перейти в него в командной строке:
+## Project launch:
+Clone the repository:
 
 ```
-git clone git@github.com:Sheleg0v/infra_sp2.git
+git clone git@github.com:Sheleg0v/yamdb_final
 ```
 
-Перейти в директорию infra:
+Change directory on the command line:
 
 ```
-cd infra_sp2/infra
+cd amdb_final/infra
 ```
 
-Запустить docker-compose
+launch docker-compose
 
 ```
 docker-compose up -d --build
 ```
 
-Выполнить миграции:
+Apply migrations:
 
 ```
 docker-compose exec web python manage.py makemigrations
@@ -62,15 +62,13 @@ docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
 ```
 
-## Заполнение базы данных:
-После запуска проекта выполните команду
+## Filling in the database:
+After launching project run this command:
 
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 
-### Авторы:
-- https://github.com/maxwellhousee - Максим Нуриев
+### Author:
 - https://github.com/Sheleg0v - Иван Шелегов
-- https://github.com/Gaius-Capito - Владислав Бунин
