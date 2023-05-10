@@ -14,6 +14,9 @@ Stack:
 - DRF 3.12.4
 - djangorestframework-simplejwt 4.7.2
 - PyJWT 2.1.0
+- gunicorn 20.0.4
+- nginx
+- PostgreSQL
 
 The list of requests and endpoints is described in the ReDoc documentation, available at:
 
