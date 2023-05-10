@@ -1,7 +1,5 @@
 # YaMDb API
 
-![example workflow](https://github.com/sheleg0v/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-
 ## Project description:
 
 The YaMDb project collects user reviews of works. The works themselves 
